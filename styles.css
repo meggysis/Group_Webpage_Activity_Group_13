@@ -42,7 +42,7 @@ header nav button:hover {
 /* Flex container for team bios and vision sections */
 .container {
     width: 80%;
-    margin: 20px auto;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -88,3 +88,44 @@ button {
 button:hover {
     background: #0056b3;
 }
+
+/* Avatar styling */
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Moodboard styling */
+.moodboard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.moodboard img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.moodboard a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+/* Unique styles for each card */
+.unique-style-1 {
+    background-color: #fef6e4;
+    font-family: 'Calibri', sans-serif;
+}
+
+.unique-style-2 {
+    background-color: #e4f6fe;
+    font-family: 'Calibri', monospace;
+}
+
+

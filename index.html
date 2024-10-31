@@ -22,25 +22,34 @@
 
 <div class="row">
   <div class="column" style="background-color:#aaa;">
-    <div id="bios" class="container">
-    <!-- Each card represents an individual team member -->
-    <div class="card">
-        <h2>John Doe</h2>
-        <p>Frontend Developer</p>
-        <button onclick="toggleBio('bio1')">Show Bio</button>
-        <p id="bio1" class="bio">John is a skilled frontend developer with 5 years of experience in creating responsive web applications.</p>
-    </div>
-    <div class="card">
-        <h2>Jane Smith</h2>
-        <p>Backend Developer</p>
-        <button onclick="toggleBio('bio2')">Show Bio</button>
-        <p id="bio2" class="bio">Jane is a backend developer specializing in server-side logic and database management.</p>
+    <div id="bios1" class="container">
+        <div class="card">
+            <div class="card unique-style-1">
+                <img src="img/thomas-avatar.jpg" alt="Thomas's Avatar" class="avatar">
+                <h2>Thomas Weaver</h2>
+                <p>Frontend Developer</p>
+                <button onclick="toggleBio('bio1')">Show Bio</button>
+                <div id="bio1" class="bio">
+                    <p>Thomas is a skilled frontend developer with a passion for creating responsive web applications.</p>
+                    <div class="moodboard">
+                        <img src="img/javascript-logo.png" alt="JavaScript">
+                        <img src="img/react-logo.png" alt="React">
+                        <a href="https://github.com/Tweaver347" target="_blank">GitHub</a>
+                        <img src="img/inspiration-meme.png" alt="Inspirational Meme">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Jane Smith</h2>
+            <p>Backend Developer</p>
+            <button onclick="toggleBio('bio2')">Show Bio</button>
+            <p id="bio2" class="bio">Jane is a backend developer specializing in server-side logic and database management.</p>
+        </div>
     </div>
   </div>
   <div class="column" style="background-color:#bbb;">
-<!-- Team bios section (default section) -->
-    <div id="bios" class="container">
-        <!-- Each card represents an individual team member -->
+    <div id="bios2" class="container">
         <div class="card">
             <h2>Emily Johnson</h2>
             <p>UI/UX Designer</p>
