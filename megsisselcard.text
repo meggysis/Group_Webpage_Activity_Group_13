@@ -1,0 +1,21 @@
+<div class="card">
+    <div class="card unique-style-2">
+        <img src="https://images.aiscribbles.com/2811864ed72f47c381ef7aff5676f8e9.png?v=d8558b" alt="Meg Sissel's Avatar" class="avatar">
+        <h2>Meg Sissel</h2>
+        <p>UI/UX Designer & Prototyper</p>
+        <button onclick="toggleBio('bioMeg')">Show Bio</button>
+        <div id="bioMeg" class="bio">
+            <p>Meg Sissel is a dedicated senior developer with a passion for creating innovative solutions that blend creativity and technical expertise. As she approaches the completion of her degree, Meg is excited to pursue a career in digital forensics, where she can leverage her skills to uncover insights and enhance cybersecurity. With experience in both frontend and backend development, she is always eager to explore the latest technologies and best practices in software development. Outside of her professional pursuits, Meg enjoys gaming and spending quality time with her bunny, making her both a tech enthusiast and a devoted pet owner.</p>
+            <div class="moodboard">
+                <a href="https://github.com/meggysis" target="_blank">
+                    <img src="https://pngimg.com/uploads/github/github_PNG80.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/meg-sissel-222398251/" target="_blank">
+                    <img src="https://th.bing.com/th/id/OIP.8IxSTRR_RjmMtUAT7nAT7gHaHa?rs=1&pid=ImgDetMain" alt="LinkedIn">
+                </a>
+                <img src="https://i.pinimg.com/564x/49/c9/58/49c95817f95d5c1b940e3f4f71f96f18.jpg" alt="Meme">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0D7SJAbVq9OPEFzOR5AnNSpSxuYWyBNh1zw&s" alt="Meme">
+            </div>
+        </div>
+    </div>
+</div>
