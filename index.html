@@ -1,79 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Bio</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Team Bio</title>
+        <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    </head>
 
-<header>
-    <h1>Meet Our Team</h1>
-    <!-- Example team logo -->
-    <img src="img/team-logo.png" alt="Team Logo" class="team-logo">
+    <body>
+        <div id ="main-content">
+            <header>
+                <h1>Meet The Team</h1>
+                <!-- Example team logo -->
+                <img src="https://i.imgur.com/IBMmPGV.jpeg" alt="Team Logo" class="team-logo">
 
-    <!-- Navigation menu to switch between sections -->
-    <nav>
-        <button onclick="showSection('bios')">Team Bios</button>
-        <button onclick="showSection('vision')">Team Vision</button>
-    </nav>
-</header>
+                <!-- Navigation menu to switch between sections -->
+                <nav>
+                    <button onclick="showSection('bios')">Team Bios</button>
+                    <button onclick="showSection('vision')">Team Vision</button>
+                </nav>
+            </header>
 
-<div class="row">
-  <div class="column" style="background-color:#aaa;">
-    <div id="bios1" class="container">
-        <div class="card">
-            <div class="card unique-style-1">
-                <img src="img/thomas-avatar.jpg" alt="Thomas's Avatar" class="avatar">
-                <h2>Thomas Weaver</h2>
-                <p>Frontend Developer</p>
-                <button onclick="toggleBio('bio1')">Show Bio</button>
-                <div id="bio1" class="bio">
-                    <p>Thomas is a skilled frontend developer with a passion for creating responsive web applications.</p>
-                    <div class="moodboard">
-                        <img src="img/javascript-logo.png" alt="JavaScript">
-                        <img src="img/react-logo.png" alt="React">
-                        <a href="https://github.com/Tweaver347" target="_blank">GitHub</a>
-                        <img src="img/inspiration-meme.png" alt="Inspirational Meme">
+            <div class="row">
+              <div class="column">
+                <div id="bios1" class="container">
+                    <div class="card">
+                        <div class="card unique-style-1">
+                            <img src="https://i.imgur.com/Jia1CMX.png" alt="Thomas's Avatar" class="avatar">
+                            <h2>Thomas Weaver</h2>
+                            <p>Font-End + Game Developer</p>
+                            <button onclick="toggleBio('bio1')">Show Bio</button>
+                            <div id="bio1" class="bio">
+                                <p>Thomas Weaver is a skilled computer scientist with a passion for frontend development and game design. He combines technical expertise with creativity to build responsive web applications and immersive gaming experiences. Thomas continually explores innovative tools and technologies to push the boundaries of digital interaction and user experience.</p>
+                                <div class="moodboard">
+                                    <img src="https://th.bing.com/th/id/OIP.zmEhHJbvO1DqM6ep8su75AAAAA?rs=1&pid=ImgDetMain" alt="Mendix">
+                                    <img src="https://companieslogo.com/img/orig/U-ea48bc1d.png?t=1634728034" alt="Unity">
+                                    <a href="https://github.com/Tweaver347">
+                                        <img src="https://pngimg.com/uploads/github/github_PNG80.png" alt="GitHub">
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/thomas-weaver-b5812b15a/">
+                                        <img src="https://th.bing.com/th/id/OIP.8IxSTRR_RjmMtUAT7nAT7gHaHa?rs=1&pid=ImgDetMain" alt="Linkedin">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <div class="card">
+                        <h2>Jane Smith</h2>
+                        <p>Backend Developer</p>
+                        <button onclick="toggleBio('bio2')">Show Bio</button>
+                        <p id="bio2" class="bio">Jane is a backend developer specializing in server-side logic and database management.</p>
+                    </div>
+                </div>
+              </div>
+              <div class="column">
+                <div id="bios2" class="container">
+                    <div class="card">
+                        <h2>Emily Johnson</h2>
+                        <p>UI/UX Designer</p>
+                        <button onclick="toggleBio('bio3')">Show Bio</button>
+                        <p id="bio3" class="bio">Emily is a UI/UX designer with a passion for creating user-friendly interfaces.</p>
+                    </div>
+                    <div class="card">
+                        <h2>Emily Johnson</h2>
+                        <p>UI/UX Designer</p>
+                        <button onclick="toggleBio('bio4')">Show Bio</button>
+                        <p id="bio4" class="bio">Emily is a UI/UX designer with a passion for creating user-friendly interfaces.</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+        <!-- Team vision/mission statement section (hidden by default) -->
+        <div id="vision" class="container" style="display: none;">
+            <div class="card">
+                <div class="card unique-style-1">
+                    <h1>Our Mission</h1>
+                    <p style="font-size: 18px;">At ElevateTech, we are committed to pushing the boundaries of technology to create impactful, high-quality solutions that drive innovation and elevate user experiences. We believe in fostering a collaborative and inclusive environment where creativity and technical excellence thrive. Our mission is to empower our clients and community through cutting-edge technology, while continuously growing and evolving to meet the challenges of tomorrow.</p>
                 </div>
             </div>
         </div>
-        <div class="card">
-            <h2>Jane Smith</h2>
-            <p>Backend Developer</p>
-            <button onclick="toggleBio('bio2')">Show Bio</button>
-            <p id="bio2" class="bio">Jane is a backend developer specializing in server-side logic and database management.</p>
+
+        <script src="script.js"></script> <!-- Link to external JavaScript file -->
+
+
         </div>
-    </div>
-  </div>
-  <div class="column" style="background-color:#bbb;">
-    <div id="bios2" class="container">
-        <div class="card">
-            <h2>Emily Johnson</h2>
-            <p>UI/UX Designer</p>
-            <button onclick="toggleBio('bio3')">Show Bio</button>
-            <p id="bio3" class="bio">Emily is a UI/UX designer with a passion for creating user-friendly interfaces.</p>
-        </div>
-        <div class="card">
-            <h2>Emily Johnson</h2>
-            <p>UI/UX Designer</p>
-            <button onclick="toggleBio('bio4')">Show Bio</button>
-            <p id="bio4" class="bio">Emily is a UI/UX designer with a passion for creating user-friendly interfaces.</p>
-        </div>
-    </div>
-  </div>
-</div>
 
 
-<!-- Team vision/mission statement section (hidden by default) -->
-<div id="vision" class="container" style="display: none;">
-    <h2>Our Mission Statement</h2>
-    <p>We strive to create a collaborative, inclusive, and innovative environment where team members feel empowered to push boundaries and achieve excellence in their craft. Our mission is to deliver high-quality solutions that meet and exceed our clients' expectations.</p>
-</div>
 
-<script src="script.js"></script> <!-- Link to external JavaScript file -->
+    </body>
 
-</body>
 </html>

@@ -1,14 +1,19 @@
+#main-content {
+    background: linear-gradient(to bottom right, #3f4d56, #1f2932); /* Adjust colors */
+    padding: 0;
+    margin: 0;
+    min-height: 100vh; /* Ensures it covers the viewport height */
+}
+
 /* General page styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
 
 /* Header section styling */
 header {
-    background: #333;
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -16,7 +21,7 @@ header {
 
 /* Styling for team logo image */
 .team-logo {
-    width: 150px; /* Adjust the size as needed */
+    width: 175px; /* Adjust the size as needed */
     margin-top: 10px;
 }
 
@@ -26,7 +31,7 @@ header nav {
 }
 
 header nav button {
-    background: #007BFF;
+    background: #1184a4;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -50,18 +55,18 @@ header nav button:hover {
 
 /* Card styling for individual team bios */
 .card {
-    background: white;
+    background: #f7fbf6;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin: 10px;
-    padding: 20px;
+    padding: 5px;
     flex: 1 1 calc(30% - 40px);
     text-align: center;
     transition: transform 0.2s;
 }
 
 .card:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 h2 {
@@ -77,7 +82,7 @@ h2 {
 
 /* Button styling */
 button {
-    background: #007BFF;
+    background: #1184a4;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -89,6 +94,12 @@ button:hover {
     background: #0056b3;
 }
 
+.row{
+    background: transparent;
+}
+.column{
+    background: transparent;
+}
 /* Avatar styling */
 .avatar {
     width: 100px;
@@ -99,9 +110,6 @@ button:hover {
 
 /* Moodboard styling */
 .moodboard {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
     margin-top: 10px;
 }
 
@@ -109,18 +117,21 @@ button:hover {
     width: 40px;
     height: 40px;
     border-radius: 5px;
+    margin: 0 10px;
 }
 
 .moodboard a {
     color: #007BFF;
     text-decoration: none;
     font-size: 0.9em;
+    margin:auto;
 }
 
 /* Unique styles for each card */
 .unique-style-1 {
-    background-color: #fef6e4;
-    font-family: 'Calibri', sans-serif;
+    background-color: #53d8ef;
+
+    font-family: 'Calibri', monospace;
 }
 
 .unique-style-2 {
